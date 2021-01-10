@@ -17,7 +17,6 @@ class About(models.Model):
     def __str__(self):
         return "About me"
 
-
 # service model
 class Service(models.Model):
     name = models.CharField(max_length=100, verbose_name=" service name")
@@ -26,7 +25,6 @@ class Service(models.Model):
     def __str__(self):
         return self.name
 
-
 # recent work model
 class RecentWork(models.Model):
     title = models.CharField(max_length=100, verbose_name="Work Title")
@@ -34,7 +32,6 @@ class RecentWork(models.Model):
 
     def __str__(self):
         return self.title
-
 
 # client model
 class Client(models.Model):
