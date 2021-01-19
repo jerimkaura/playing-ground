@@ -69,14 +69,14 @@
 .home {
   display: flex;
   background: url("images/banner.jpg") no-repeat center;
-  height: 95vh;
+  height: 100vh;
   color: #fff;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
 
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: auto 0 auto 30px;
 }
 
 .home .home-content .text-1 {
@@ -96,4 +96,42 @@
 .home .home-content .text-3 span {
   color: crimson;
   font-weight: 500;
+}
+
+/* Responsive look on various devices */
+@media (max-width: 991px){
+    .max-width{
+      	padding: 0 50px;
+	}
+	
+	.navbar .menu{
+		position: fixed;
+		height: 50vh;
+		width: 50%;
+		left: 0;
+		top: 0;
+		background: #111;
+		text-align: center;
+
+	}
+
+	.navbar .menu .li{
+		display: block;
+	}
+	.navbar .menu .li a{
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
+
+	  .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
 }
