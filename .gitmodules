@@ -1,3 +1,0 @@
-[submodule "apps/myapp"]
-	path = apps/myapp
-	url = https://github.com/jerimkaura/playing-ground
