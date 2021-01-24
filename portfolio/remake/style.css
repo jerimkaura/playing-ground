@@ -122,85 +122,6 @@
     background: none;
 }
 
-/* Responsive look on various devices */
-@media screen and (max-width: 947px){
-	.home .max-width{
-        margin-left: 0px;
-        margin-top: 200px;
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-     .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .max-width{
-        max-width: 930px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991.98px){
-     .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-        padding: 8px 25px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-     .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 30px;
-    }
-}
-@media (max-width: 575.98px) {    
-    .home .home-content .text-2{
-        font-size: 40px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-}
 
 /* about section styling */
 section{
@@ -295,4 +216,111 @@ section{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
+}
+
+/* Service styling start */
+section{
+    padding: 50px 0;
+}
+.services{
+    background-color: rgb(44, 41, 41);
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+} 
+.services .title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    /* max-width: 600px; */
+}
+.services .title::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 35%;
+    left:30%;
+    background: #fff;
+}
+.services .title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 35%;
+    right:30%;
+    background: #fff;
+}
+.services .service-content{
+    display: flex !important;
+    flex-direction: row !important;
+}
+.services .service-content > .card{
+    width: calc(33% - 20px);
+    background: #222;
+    margin: 4px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .service-content .card:hover{
+    background: crimson;
+}
+.services .service-content .card:hover i {
+    color: #fff;
+}
+.services .service-content .card:hover .icon-border {
+    border:solid #fff 3px;
+    background: crimson;
+}
+
+.services .service-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .service-content .card:hover{
+    transform: scale(1.02);
+}
+.services .service-content .card img{
+    height: 250px;
+    width: 370px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    border-radius: 1px;
+    padding-bottom: 20px;
+}
+.services .service-content .card .icon-border{
+    padding-top: 200px;
+    border:solid crimson 3px;
+    border-radius: 50%;
+    padding: 17px;
+    text-align: center;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    background: rgb(41, 39, 39);
+    padding-bottom: 20px;
+}
+.services .service-content .card  .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.services .service-content .card  p{
+    padding: 2px 20px 10px 20px;
+    text-align: justify;
+    /* text-justify: inter-word; */
+}
+
+.services .service-content .card i{
+    font-size: 30px;
+    color: crimson;
+    transition: color 0.3s ease;
 }
